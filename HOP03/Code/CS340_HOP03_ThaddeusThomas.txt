@@ -1,0 +1,17 @@
+echo echo Hello World! > HelloWorld.sh
+bash HelloWorld.sh
+export PATH=$PATH: ~/.CS340/HOP03-ThomasThaddeus/HOP03
+chmod +x HelloWorld.sh
+HelloWorld.sh
+nano HelloWorld2.sh
+
+#! /bin/bash
+printf "%s\n" "Hello World!"
+
+[ ctrl + o ][ enter ][ ctrl + x ]
+
+bash HelloWorld2.sh
+
+git init CS340/HOP03-ThomasThaddeus/HOP03
+git add .
+git commit -m "HOP03 Submission For Thaddeus Thomas"
