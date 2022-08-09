@@ -24,8 +24,8 @@ echo "Today is $( date +%Y-%m-%d )" > file.md
 cat file.md
 
 names="Kevin Arthur Evan"
-bash ShowArgurments.sh $names
-bash ShowArgurments.sh "$names"
+bash ShowArguments.sh $names
+bash ShowArguments.sh "$names"
 
 bash ShowArguments.sh Show*
 bash ShowArguments.sh ?ile.md
