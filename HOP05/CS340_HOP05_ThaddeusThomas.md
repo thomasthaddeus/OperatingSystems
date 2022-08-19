@@ -37,9 +37,6 @@
     echo $?
     ```
 
-
-
-
 ## Conditional Expression
 
 ```sh
@@ -66,7 +63,7 @@ if (( amount <=  0 ))
 then
     printf "Please enter a number that is greater than 0.\n"
 elif (( amount > 10 ))
-then 
+then
     printf "Sorry, we do not have that many pizzas.\n"
     exit 1
 else
@@ -126,5 +123,3 @@ do
   printf "The loop runs %d times.\n" "$i"
 done
 ```
-
-
