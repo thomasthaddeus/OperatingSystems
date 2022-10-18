@@ -1,0 +1,35 @@
+mkdir CS340-Summer-2022/ThaddeusThomas/Module08
+mkdir Module8
+cd Module08
+------------------------
+circleArea() ( area=`echo "3.1415926 * $1 * $1" | bc -l`; printf "The circle's area is %s\n" "$area" )
+---------------------
+circleArea 12
+----------------------
+info=$( circleArea 5 )
+echo $info
+-----------------------------------------------
+getNumber() ( return $(( $RANDOM \* 255 + 1 )) )
+getNumber
+echo $?
+getNumber
+echo $?
+getNumber
+echo $?
+--------------------------------------------------
+nano SystemSnapshot.sh
+--------------------------------------------------
+#! /bin/bash
+snapshot() {
+  filename=$(date '+%Y-%m-%d%H:%M:%S').log
+  top -n 1 | tee "$filename"
+}
+-----------------------
+sudo chmod 700 SystemSnapshot.sh
+-----------------------
+snapshot
+clear
+-----------------------
+ls
+-----------------------
+cat <log file name>
